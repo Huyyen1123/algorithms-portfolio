@@ -1,37 +1,9 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22692980&assignment_repo_type=AssignmentRepo)
-# Lab 02: Selection Sort
-
-## Overview
-Implement selection sort and understand arrays vs linked lists.
-
-## Learning Objectives
-- Implement selection sort O(n²)
-- Understand array vs linked list tradeoffs
-- Analyze algorithm complexity
-
-## Files to Complete
-- `sort.py` - Implement `find_smallest()` and `selection_sort()` functions
-
-## Instructions
-
-### Part 1: Implement find_smallest
-Find the index of the smallest element in a list starting from a given position.
-
-### Part 2: Implement selection_sort
-Use find_smallest to implement selection sort from Chapter 2.
-
-### Part 3: Run Tests
-```bash
-python -m pytest tests/ -v
-```
-
----
-
-## Lab Report
+# Lab 02: Selection Sort - Lab Report
 
 ### Student Information
 - **Name:** Huy Nguyen
 - **Date:** 2/21/2026
+- Course: COSC 2436
 
 ### Algorithm Analysis
 
@@ -49,6 +21,14 @@ python -m pytest tests/ -v
 | Insert    | O(n)  | O(1)*       | Array may need to shift many items to make space. Linked list can change pointers quickly once you’re at the spot. |
 | Delete    | O(n)  | O(1)*       | Array may need to shift items after removing. Linked list can bypass a node by changing pointers once you’re at the spot. |
 
+## Test Results
+
+Program output (example):
+
+- Selection Sort: 190 comparisons, 10 swaps  
+- Top 5 smallest cities printed correctly  
+- Top 5 largest cities printed correctly
+
 ### Reflection Questions
 
 1. Why is selection sort O(n²)?
@@ -59,3 +39,7 @@ If you need lots of insertions/deletions at the front (head) and you don’t car
 
 3. Why does Python use arrays (lists) as the default sequence type?
 Because arrays are fast for reading by index (O(1)), and most programs do a lot of reading. Python lists also resize automatically, so they’re convenient and efficient for common use.
+
+## Challenges Encountered
+
+One challenge was understanding how selection sort repeatedly finds the smallest value. I solved this by tracing the algorithm step by step and testing with small inputs.
