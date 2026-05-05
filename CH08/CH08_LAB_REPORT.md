@@ -1,8 +1,8 @@
 # Chapter 8: Balanced Trees — Lab Report
 
 ## Student Information
-- **Name:** Huy Nguyen
-- **Date:** 4/4/2026
+- Name: Huy Nguyen
+- Date: 4/4/2026
 - Course: COSC 2436
 
 ## Algorithm Summary
