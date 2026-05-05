@@ -1,45 +1,44 @@
-# Lab 02: Selection Sort - Lab Report
+# Chapter 2: Selection Sort — Lab Report
 
-### Student Information
-- **Name:** Huy Nguyen
-- **Date:** 2/21/2026
+## Student Information
+- Name: Huy Nguyen
+- Date: 2/21/2026
 - Course: COSC 2436
 
-### Algorithm Analysis
+## Algorithm Summary
+
+Selection sort is a simple sorting algorithm that works by repeatedly finding the smallest element in a list and placing it at the front. It scans the remaining unsorted part of the list each time and swaps the smallest value into the correct position. This process continues until the entire list is sorted.
 
 #### Selection Sort
-- **Time Complexity:** O(n^2)
-- **How it works:** Selection sort goes through the list and finds the smallest item, then swaps it into the first position.
-  Then, it finds the smallest item in the remaining unsorted part and swaps it into the next position.
-  It repeats until the whole list is sorted.
+- **Time Complexity:** O(n²)
+- **How it works:** The algorithm goes through the list, finds the smallest value, and swaps it into place. Then it repeats this process for the rest of the list.
 
 #### Arrays vs Linked Lists
 
 | Operation | Array | Linked List | Why? |
 |-----------|-------|-------------|------|
-| Read      | O(1)  | O(n)        | Array can jump to an index instantly. Linked list must walk node-by-node to reach an index. |
-| Insert    | O(n)  | O(1)*       | Array may need to shift many items to make space. Linked list can change pointers quickly once you’re at the spot. |
-| Delete    | O(n)  | O(1)*       | Array may need to shift items after removing. Linked list can bypass a node by changing pointers once you’re at the spot. |
+| Read      | O(1)  | O(n)        | Array can access any index directly, while linked lists must traverse node by node. |
+| Insert    | O(n)  | O(1)*       | Arrays may shift elements, while linked lists just update pointers. |
+| Delete    | O(n)  | O(1)*       | Arrays shift elements after deletion, linked lists adjust pointers. |
 
 ## Test Results
 
-Program output (example):
+Program runs successfully:
+- Selection Sort performs correctly  
+- Comparisons and swaps are counted  
+- Smallest and largest cities are printed correctly  
 
-- Selection Sort: 190 comparisons, 10 swaps  
-- Top 5 smallest cities printed correctly  
-- Top 5 largest cities printed correctly
+## Reflection Questions
 
-### Reflection Questions
+1. Why is selection sort O(n²)?  
+Because it loops through the list and for each position, it scans the remaining elements to find the smallest value.
 
-1. Why is selection sort O(n²)?
-Because for each position in the list, it scans the rest of the list to find the smallest (or largest).
+2. When would you choose a linked list over an array?  
+When you need fast insertions and deletions and do not need fast random access.
 
-2. When would you choose a linked list over an array?
-If you need lots of insertions/deletions at the front (head) and you don’t care about fast random access by index.
-
-3. Why does Python use arrays (lists) as the default sequence type?
-Because arrays are fast for reading by index (O(1)), and most programs do a lot of reading. Python lists also resize automatically, so they’re convenient and efficient for common use.
+3. Why does Python use arrays (lists) as the default sequence type?  
+Because arrays allow fast access by index and are efficient for most use cases.
 
 ## Challenges Encountered
 
-One challenge was understanding how selection sort repeatedly finds the smallest value. I solved this by tracing the algorithm step by step and testing with small inputs.
+Understanding how selection sort repeatedly finds the smallest value was challenging at first. Tracing the algorithm step by step helped me understand how it works.
