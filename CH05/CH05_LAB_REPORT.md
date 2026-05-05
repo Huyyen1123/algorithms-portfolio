@@ -1,4 +1,4 @@
-# Lab 05: 2436 Hash Table Lab 05
+# Chapter 5: Hash Tables — Lab Report
 
 ## Student Information
 
