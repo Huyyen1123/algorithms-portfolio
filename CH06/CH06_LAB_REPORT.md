@@ -1,4 +1,4 @@
-# Lab 06: 2436 Ch06
+# Chapter 6: Breadth-First Search — Lab Report
 
 ## Student Information
 - **Name:** Huy Nguyen
